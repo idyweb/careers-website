@@ -3,50 +3,29 @@
   <head>
     <title>Dev Careers</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-        h1 {
-            font-size: 40px;
-            font-family: Roboto;
-            font-weight: normal;
-            color: rgb(50,50,50);
-            text-align: center;
-        }
-        #banner{
-            width: 100%;
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style> 
+        #banner {
             height: 360px;
+            width: 100%;
             object-fit: cover;
         }
-        h2{
-            font-family: Roboto;
-            font-size: 32px;
-            color: rgb(100, 100, 100);
-            text-align: center;
-            font-weight: normal;
-        }
-        p{
-            font-family: Roboto;
-            color: rgb(80,80,80);
-
-        }
-        #container{
-            max-width: 720px;
-            margin: 0 auto;
-        }
-        #contact-btn{
-            text-align: center;
-        }
     </style>
+
   </head>
 
   <body>
-    <div id="container">
-        <h1>Dev Careers</h1>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4" >Dev Careers</h1>
 
-        <img id ="banner" src="/static/header-img.jpg" height="320" />
+        <img class="img-fluid" src="/static/header-img.jpg" id='banner'  />
 
         <p>Hello there, you'll learn about the job openings at Dev Career here.</p>
-        <h2>About Dev Career</h2>
-        <p>
+        <h2 class="text-center mt-2 mb-4">About Dev Career</h2>
+        <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -55,10 +34,10 @@
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
         est laborum.
         </p>
-        <h2>Open Positions </h2>
+        <h2 class="text-center mt-2 mb-4" >Open Positions </h2>
         <p>TODO -Show the jobs here </p>
-        <div id="contact-btn">
-            <button >Contact Us</button>
+        <div class="text-center" >
+            <button class="btn btn-primary btn-lg" >Contact Us</button>
 
         </div>
         
