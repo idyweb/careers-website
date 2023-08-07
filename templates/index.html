@@ -4,51 +4,46 @@
     <title>Dev Careers</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <style> 
-        #banner {
-            height: 360px;
-            width: 100%;
-            object-fit: cover;
-        }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style>
+      #banner {
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+      }
     </style>
-
   </head>
+  
 
   <body>
+    {% include 'nav.html'%}
     <div class="container">
-        <h1 class="text-center mt-4 mb-4" >Dev Careers</h1>
+      <h1 class="text-center mt-4 mb-4">Dev Careers</h1>
 
-        <img class="img-fluid" src="/static/header-img.jpg" id='banner'  />
+      <img class="img-fluid" src="/static/header-img.jpg" id="banner" />
 
-        <p>Hello there, you'll learn about the job openings at Dev Career here.</p>
-        <h2 class="text-center mt-2 mb-4">About Dev Career</h2>
-        <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-        </p>
-        <h2 class="text-center mt-2 mb-4" >Open Positions </h2>
-        <div>
-            {%for job in jobs%}
-            {% include 'jobitem.html' %}
-                
-
-            {% endfor %}
-        </div>
-        <div class="text-center" >
-            <button class="btn btn-primary btn-lg" >Contact Us</button>
-
-        </div>
-        
-
+      <p>
+        Hello there, you'll learn about the job openings at Dev Career here.
+      </p>
+      <h2 class="text-center mt-2 mb-4">About Dev Career</h2>
+      <p class="lead">
+        At Dev Career, we're on a mission to build the most highly reputed technical university in the world, and we're building
+        it completely online. Our flagship data science program helps working professionals with a background in 
+        programming or analytics make a career transition to datascience. We also offer several free begineer-friendly courses and have a fast-growing
+        community of 200,000+ users.
+      </p>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <div>{%for job in jobs%} {% include 'jobitem.html' %} {% endfor %}</div>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
+      </div>
     </div>
-
   </body>
 </html>
